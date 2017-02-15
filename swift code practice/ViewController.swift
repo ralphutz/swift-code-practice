@@ -1,25 +1,14 @@
-//
-//  ViewController.swift
-//  swift code practice
-//
-//  Created by Ralph Utz on 2/15/17.
-//  Copyright © 2017 BNR. All rights reserved.
-//
-
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+var i = 1
+while i < 101 {
+    
+    
+    switch i <= 100 {
+    case i % 3 == 0:
+        print("fizz")
+    case i % 5 == 0:
+        print("buzz")
+    default:
+        print(i)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    i += 1
 }
-
