@@ -28,3 +28,22 @@ let aAcute = "\u{0061}\u{0301}"
 for scalar in playground.unicodeScalars {
     print("\(scalar.value) ")
 }
+
+
+
+import Cocoa
+
+var errorCodeString: String?
+errorCodeString = "404"
+var errorDescription: String?
+
+if let theError = errorCodeString, let errorCodeInteger = Int(theError), errorCodeInteger == 404 {
+    errorDescription = "\(errorCodeInteger + 200): resource was not found."
+}
+var upCaseErrorDescription = errorDescription?.uppercased()
+errorDescription
+
+upCaseErrorDescription?.append("Please Try Again")
+upCaseErrorDescription
+
+let description = errorDescription ?? "no error"
