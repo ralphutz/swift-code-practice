@@ -54,7 +54,7 @@ let description = errorDescription ?? "no error"
 var bucketList = ["Climb Mt. Everest"]
 
 var newItems = [
-    "Fly hot air balloon in Fiji",
+    "Fly hot air balloon to Fiji",
     "Watch the Lord of the Rings trilogy in one day",
     "Go on a walkabout",
     "Scuba dive in the Great Blue Hole",
@@ -75,9 +75,35 @@ bucketList[0] = "Climb Mt. Kilimanjaro"
 bucketList.insert("Toboggan across Alaska", at: 2)
 bucketList
 
+if let r = bucketList.index(of: "Fly hot air balloon to Fiji") {
+    let answer = bucketList.index(r, offsetBy: 2)
+    print(bucketList[answer])
+}
 
+var myronsList = [
+    "Climb Mt. Kilimanjaro",
+    "Fly hot air balloon to Fiji",
+    "Toboggan across Alaska",
+    "Go on a walkabout in Australia",
+    "Scuba dive in the Great Blue Hole",
+    "Find a triple rainbow"
+]
 
+let equal = (bucketList == myronsList)
 
+let lunches = [
+    "Cheeseburger",
+    "Veggie Pizza",
+    "Chicken Ceasar Salad",
+    "Black Bean Burrito",
+    "Falafel Wrap"
+    
+]
 
+var toDoList = ["Take out the garbage", "Pay bills", "Cross off finished items"]
+
+for i in toDoList.reversed() {
+    print(i)
+}
 
 
