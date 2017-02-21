@@ -117,3 +117,17 @@ let watchedMovies = Array(movieRatings.keys)
 
 
 
+var alabamaCounties = ["henry":(36345,36346),"dale":(36302,36301), "houston":(4455,4455) ] as [String : Any]
+
+//for county in alabamaCounties.values {
+//    print("Alabama has the following zip codes: \(county)", terminator: "")
+
+
+//}
+
+let counties = Array(alabamaCounties.values)
+
+print("Alabama has the following zip codes: \(counties)", terminator: "")
+
+
+
