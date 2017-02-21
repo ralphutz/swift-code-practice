@@ -107,3 +107,13 @@ for i in toDoList.reversed() {
 }
 
 
+for (key, value) in movieRatings {
+    print("The movie \(key) was rated \(value)")
+}
+for movie in movieRatings.keys {
+    print("User has rated \(movie)")
+}
+let watchedMovies = Array(movieRatings.keys)
+
+
+
