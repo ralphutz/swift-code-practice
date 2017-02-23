@@ -160,3 +160,16 @@ let newCities = myCities.isSuperset(of: yourCities)
 
 
 
+
+func printElementArray<T>(a: [T]) {
+    for element in a { print(element)}
+}
+
+
+for _ in 1...5 { print("Count") }
+
+
+
+
+
+
