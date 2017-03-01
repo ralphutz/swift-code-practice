@@ -245,6 +245,14 @@ areaOfTriangleWith(base: 3.0, height: 5.0)
 
 
 
+func grabMiddleName(fromFullName name: (String ,String?, String)) -> String? {
+    return name.1
+}
+let middleName = grabMiddleName(fromFullName: ("Matt", "Moe", "Mathias"))
+if let theName = middleName {
+    print(theName)
+}
+
 
 
 
