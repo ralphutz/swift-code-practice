@@ -265,5 +265,6 @@ func greetByMiddleName(fromFullName name: (first: String,
 }
 greetByMiddleName(fromFullName: ("Matt", "Danger", "Mathias"))
 
+guard let middleName = (name.middle != nil) && (name.middle?.characters.count)! < 4  else {
 
 
