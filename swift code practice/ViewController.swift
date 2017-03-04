@@ -268,3 +268,11 @@ greetByMiddleName(fromFullName: ("Matt", "Danger", "Mathias"))
 guard let middleName = (name.middle != nil) && (name.middle?.characters.count)! < 4  else {
 
 
+    public typealias Void = ()
+    
+    func printGreeting() -> Void {
+        print("Hello, playground.")
+        
+}
+
+
