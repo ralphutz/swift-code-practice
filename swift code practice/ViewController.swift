@@ -275,4 +275,10 @@ guard let middleName = (name.middle != nil) && (name.middle?.characters.count)! 
         
 }
 
+    let volunteerCounts = [1,3,40,32,2,53,77,13]
+    
+    func sortAscending(_ i: Int, _ j: Int) -> Bool {
+        return i < j
+    }
+    let volunteersSorted = volunteerCounts.sorted(by: sortAscending)
 
