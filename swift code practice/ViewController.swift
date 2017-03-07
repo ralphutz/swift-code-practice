@@ -282,3 +282,7 @@ guard let middleName = (name.middle != nil) && (name.middle?.characters.count)! 
     }
     let volunteersSorted = volunteerCounts.sorted(by: sortAscending)
 
+
+    let volunteerCounts = [1,3,40,32,2,53,77,13]
+    
+    let volunteersSorted = volunteerCounts.sorted { $0 < $1 }
